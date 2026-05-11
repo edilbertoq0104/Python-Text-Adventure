@@ -1,0 +1,63 @@
+Title: Invasion
+
+`` The game runs on a moves system where each decision knocks down a point. The power to your house gets cut when it gets to 7 turn points.
+
+== Story: You're on vacation in a small rural town Airbnb, home alone, dark night, and are getting ready for bed.
+However, your phone gives out a loud alert warning the town has an armed and dangerous serial killer on the loose.
+Before you can finish reading the message, your phone dies and you remember you lost your charger.
+You are left standing in your room, with said warning in your thoughts.
+What do you do?
+
+Area 1
+
+- Check Closet
+	You check your closet and see clothes/boxes. Look closer?
+		If yes, you find your gunbox, open it & take your hand gun. - 3 turn
+		If no, you close your closet.  - 1 turn
+
+- Check Night Stands
+	You open your night stand drawers and find nothing of use in them.  - 1 turn
+
+- Walk out into hallway - 1 turn
+	*Move to area 2*
+
+- Go to sleep
+	Ending 1: You think nothing of the warning & shrug it off. You go to sleep and... never wake up. The end.
+
+Area 2
+
+ You walk into the hallway, kitchen, living room, & closed doors.
+
+- Check Kitchen -2 turn
+	You check your kitchen and find a knife and take it.
+
+- Check Living Room - 1 turn
+	You look around the living room and find nothing of use.
+
+- Check Door 1
+	You open the door and find the restroom. Look through it? \Add Restroom to Knowledge\
+		If  Yes, you look through the restroom and find nothing of use. - 2 turn
+		If  No, you close the door -1 turn
+
+- Check door 2
+	You open the door and find the storage room. Look through it? \Add Storage Room to Knowledge\
+		If yes, you look through the storage cabinets and find a flash light. - 2 turn
+		If no, you close the door - 1 turn
+
+- Sit on couch
+	Ending 2: You sit on the couch and watch some television! The power suddenly goes off and you hear the door open, you turn to the door and see a flash and loud bang. Your world goes dark. The End.
+
+Area 3 
+
+(After -7 turns, this area is loaded.) You hear ruffling and a snap. The lights flicker and there's a total black out. You need to hide, FAST! Where are you hiding?
+
+- Hide in ??? (If RestKnowledge = True, display Restroom.) (If Flashlight = True, display Door 1) (If RestKnowledge = True AND Flashlight = True, Display Restroom)
+
+- Hide in ??? (If StorageRoomKnowledge = True, display Restroom.) (If Flashlight = True, display Door 2) (If StorageRoomKnowledge = True AND Flashlight = True, Display Restroom)
+	Ending 3: You hide. You hear the door open. Your world goes dark. The End.
+	Ending 4: (If Gun = True, BUT Flashlight = False, You hide. Gun in hand. You hear the door open and fire towards the direction of the noise. You calm down and relax. You feel a cold metal barrel on your head. Your world goes dark. The End.
+	Ending 5: (If Gun = True, AND Flashlight = True, You hide. Gun in hand. Flashlight shining the door. You hear and see the door open. You open fire at the killer and take them down. You sit there, adrenaline rushing. You stay up to see the sun rise. You are safe. It's over. The End.
+	Ending 6: (If Knife = True, BUT Flashlight = False, You hide. Knife in hand. You hear the door open and rush towards the direction of the noise. You stab into the darkness hitting something. The knife is taken out of your hands. You feel a cold metal barrel on your head. Your world goes dark. The End.
+	Ending 7: (If Knife = True, AND Flashlight = True, You hide. Knife in hand. Flashlight shining the door. You hear and see the door open. You rush at the killer and tumble them down. You stab repeatdely and get shot in the process, but with your adrenaline running through your system you don't feel it. The killer is dead. You sit there, blood stained. Your adrenaline calms down and you start to feel the pain of the gun shot wound. The world goes dark.. ... But it glows again as you open your eyes, you are in a hospital bed.  You are safe. It's over. The End.
+	Ending 8: (If Knife True AND Gun = True BUT Flashlight False, You hide. Gun in hand. Knife on belt. You hear the door open and fire towards the direction of the noise. *BANG* *BANG* *BANG* *BANG* You calm down and relax. However, you feel a cold metal barrel on your head. You quickly grab the knife from your belt and stab the killer in the leg. *SPLAT* *SQUELCH* *PLAP* They shoot you while they are struggling to get you off. *BANG* But your adrenaline running through you makes you ignore it and keep stabbing. The killer is dead. You sit there, blood stained. Your adrenaline calms down and you start to feel the pain of the gun shot wound.The world goes dark.. ... But it glows again as you open your eyes, you are in a hospital bed.  You are safe. It's over. The End.
+	Ending 9: (If Knife = True AND Flashlight = True AND Gun = True, You hide. Gun in hand. Knife on belt. Flashlight shining the door. You hear and see the door open. You open fire at the killer and take them down. You sit there, adrenaline rushing. However you notice the killer reaching for his gun. You quickly aim your gun and shoot, but you are out of bullets. With no time to waste, you pull your knife out and stab the reaching hand. Repeatedly stabbing their hand and eventually stabbing their back. The killer is dead. You sit down, blood stained. You stay up to see the sun rise. You are safe. It's over. The End.
